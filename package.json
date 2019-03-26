@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "art-template": "^4.13.2",
+    "cheerio": "^1.0.0-rc.2",
+    "node-schedule": "^1.3.2",
+    "nodemailer": "^5.1.1",
+    "superagent": "^4.1.0"
+  },
+  "name": "mailtoyou",
+  "description": "整体思路和技术栈参考自掘金上的一篇文章[用 Node + EJS 写一个爬虫脚本每天定时女朋友发一封暖心邮件](https://juejin.im/post/5c75fa4af265da2d84109219)，替换了一些资源的使用。",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github-work:iotale/MailToYou.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

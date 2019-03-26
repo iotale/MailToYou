@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{title}}</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        color: #8a8a8a;
+      }
+
+      .container {
+        margin: 10px auto;
+        width: 90%;
+        max-width: 600px;
+        min-width: 375px;
+      }
+
+      .banner {
+        display: block;
+        width: 100%;
+        max-width: 600px;
+        height: 350px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 4px;
+        box-shadow: 0 0 15px #666;
+      }
+
+      .content {
+        position: relative;
+        padding: 40px 64px;
+        max-width: 600px;
+        width: 100%;
+        min-height: 550px;
+        margin-top: -10px;
+        background: #fff;
+        box-shadow: 0 0 10px #aaa;
+        text-align: center;
+      }
+
+      .together {
+        margin-bottom: 30px;
+      }
+
+      .day {
+        color: #f00;
+        font-size: 32px;
+      }
+      .weather-tips {
+        margin-bottom: 20px;
+        border-bottom: 2px solid #dfdfdf;
+        font-size: 20px;
+      }
+
+      .weather-table {
+        width: 100%;
+        margin-top: 10px;
+        border: 1px solid #dedede;
+        height: 99px;
+      }
+      .one-title {
+        margin: 40px 0 20px;
+        font-size: 16px;
+      }
+      .one-text {
+        margin: 0 auto;
+        width: 80%;
+        font-size: 14px;
+      }
+      .me {
+        position: absolute;
+        text-align: center;
+        left: 50%;
+        bottom: 20px;
+        transform: translateX(-50%);
+        font-size: 12px;
+      }
+
+      .weather-image {
+        display: inline-block;
+        vertical-align: middle;
+        width: 22px;
+        height: 22px;
+      }
+
+      .weather-text {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner" style="background-image: url({{banner}})"></div>
+      <div class="content">
+        <div class="date">{{today}}</div>
+        <h2 class="together">
+          今天是我们在一起的第<strong class="day"> {{together}} </strong>天
+        </h2>
+        <div class="weather-tips">{{tips}}</div>
+        <div>今天天气</div>
+        <table class="weather-table">
+          <tr>
+            <th>天气</th>
+            <th>温度</th>
+            <th>风</th>
+            <th>空气质量</th>
+          </tr>
+          <tr>
+            <td>
+              <img
+                class="weather-image"
+                src={{weaImg}}
+                alt="天气"
+              />
+              <span class="weather-text">{{weaText}}</span>
+            </td>
+            <td>{{temper}}</td>
+            <td>{{wind}}</td>
+            <td>{{airQuality}}</td>
+          </tr>
+        </table>
+
+        <h3 class="one-title">ONE · 一个</h3>
+        <div class="one-text">
+          {{text}}
+        </div>
+        <div class="me">By ❤ ale</div>
+      </div>
+    </div>
+  </body>
+</html>
