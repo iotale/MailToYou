@@ -1,3 +1,7 @@
+## 邮件内容效果图
+
+![mail content](./mailtobaby.png)
+
 ## 整体设计
 
 整体思路和技术栈参考自掘金上的一篇文章[用 Node + EJS 写一个爬虫脚本每天定时女朋友发一封暖心邮件](https://juejin.im/post/5c75fa4af265da2d84109219)，替换了一些资源的使用。
