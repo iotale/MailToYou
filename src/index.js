@@ -142,7 +142,7 @@ async function main() {
   rule.hour = hour;
   rule.minute = minute;
   console.log("MailToMyBaby: 期待美好的一刻~~~");
-  let job = schedule.scheduleJob(rule, function() {
+  schedule.scheduleJob(rule, function() {
     console.count("MailToMyBaby: Everything is fine!");
     main();
   });
